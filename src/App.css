@@ -1,0 +1,13 @@
+body {
+  font-family: "DM Sans", sans-serif;
+}
+
+.footer-card-shadow {
+  background: linear-gradient(
+    157deg,
+    rgba(93, 112, 249, 0) 0%,
+    rgba(93, 112, 249, 0.3) 100%
+  );
+  box-shadow: 0px 5.301219940185547px 5.301219940185547px 0px
+    rgba(0, 0, 0, 0.05);
+}

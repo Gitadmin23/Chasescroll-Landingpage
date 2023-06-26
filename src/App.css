@@ -1,6 +1,9 @@
 body {
   font-family: "DM Sans", sans-serif;
 }
+.inter{
+  font-family: "Inter", sans-serif;
+}
 
 .footer-card-shadow {
   background: linear-gradient(

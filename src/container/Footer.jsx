@@ -58,8 +58,8 @@ const Footer = () => {
   return (
     <div className="bg-black pt-20 pb-6 text-white flex flex-col items-center w-full justify-center ">
       <div className=" max-w-[1200px] w-full flex flex-col lg:flex-row gap-4 gap-y-14 items-center lg:justify-between ">
-        <div className=" flex flex-col justify-evenly gap-8 w-full max-w-[534px]">
-          <div className="flex flex-row gap-1  w-full items-center">
+        <div className=" flex flex-col lg:justify-evenly gap-8 w-full max-w-[534px]">
+          <div className="flex flex-row gap-1 self-center lg:self-start w-fit items-center">
             <img className="max-w-[60px] w-full" src={logo} alt="logo" />
             <p className="text-5xl font-bold w-full">Chasescroll</p>
           </div>

@@ -143,7 +143,7 @@ const Navbar = () => {
             </button>
           </div>
           {showMenu && (
-            <div className="fixed  z-10 top-0 right-0 w-[80%] h-full bg-white lg:hidden transition-all duration-300 ease-in-out">
+            <div className="fixed  z-10 top-0 right-0 w-[80%] h-full bg-white lg:hidden transition-all duration-1000 ease-in-out">
               <div className="flex flex-col items-start justify-start w-full h-full p-10">
                 <ul className="mt-20 flex flex-col items-center justify-start w-full gap-8 text-lg">
                   <CustomLink path="/" transparent={false} isScrolled={false}>

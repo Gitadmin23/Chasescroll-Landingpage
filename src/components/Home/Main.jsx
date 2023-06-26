@@ -22,7 +22,7 @@ const Main = () => {
   return (
     <div className="mt-32 flex flex-col gap-y-[100px] lg:gap-y-[180px]">
       {MAIN.map((item, index) => {
-        const lastWord = getLastWord(item.title);
+        // const lastWord = getLastWord(item.title);
         const words = item.title.split(" ");
 
         return (

@@ -9,7 +9,7 @@ const Card = () => {
           <img src={item.icon} alt={item.text} />
           <p className=" text-xl font-semibold " >{item.title}</p>
           <h4 className="inter text-[#667085] " >{item.text}</h4>
-          <p className=" max-w-[200px] inter text-base text-[#101828B2] " >{item.link}</p>
+          <p className=" font-bold max-w-[210px] inter text-base text-[#101828B2] " >{item.link}</p>
         </div>
       ))}
     </div>

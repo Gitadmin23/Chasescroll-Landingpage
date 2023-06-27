@@ -18,7 +18,9 @@ const Header = () => {
         <Card />
       </div>
       <div className="text-center flex flex-col gap-[30px] py-[64px] bg-[#F8F9FC] ">
-        <h3 className=" text-[54px] font-bold ">More ways to stay connected</h3>
+        <h3 className=" text-[54px] font-bold ">
+          More ways to stay <span className=" text-chaseBlue ">connected</span>{" "}
+        </h3>
         <p className=" text-[30px] text-[#101828B2] ">
           Meet the teams behind our products and explore our vision for the
           future.

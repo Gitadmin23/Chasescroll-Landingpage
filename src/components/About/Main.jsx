@@ -14,7 +14,8 @@ const Main = () => {
   }, []);
   return (
     <div className="mt-32 flex flex-col gap-y-[100px] lg:gap-y-[180px]">
-      {ABOUT_MAIN.map((item, index) => (
+      {/* FORMER DESIGN */}
+      {/* {ABOUT_MAIN.map((item, index) => (
         <div
           className={`justify-between text-center lg:text-left flex gap-6 items-center h-full first-letter
         ${
@@ -38,7 +39,35 @@ const Main = () => {
             />
           </div>
         </div>
-      ))}
+      ))} */}
+      <div className=" flex flex-col gap-20 lg:gap-40 items-center text-center  ">
+        {ABOUT_MAIN.map((item, index) => (
+          <div
+            className="max-w-[887px] w-full flex flex-col gap-4 justify-center"
+            key={item.id}
+          >
+            <h5 className=" font-bold text-2xl">{item.tag}</h5>
+            <h3 className="text-4xl text-chaseBlue font-bold">{item.title}</h3>
+            <p className="text-[22px]">
+              {index === 0 ? (
+                <>
+                  {item.text.split(" ").map((word, wordIndex) => (
+                    <span key={wordIndex}>
+                      {wordIndex === 1 ? (
+                        <span className="font-bold">{word} </span>
+                      ) : (
+                        <>{word} </>
+                      )}
+                    </span>
+                  ))}
+                </>
+              ) : (
+                item.text
+              )}
+            </p>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };

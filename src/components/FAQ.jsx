@@ -13,7 +13,7 @@ const FAQ = () => {
   return (
     <div>
       <div className="mx-auto px-4">
-        <div className="flex flex-col gap-8 my-32 text-black w-full max-w-[783px] mx-auto">
+        <div className="flex flex-col gap-8 my-32 text-black w-full max-w-[873px] mx-auto">
           <h3 className="font-bold  text-2xl md:text-4xl text-center tracking-[0.25px]">
             Frequently Asked <span className="text-chaseBlue">Questions</span>{" "}
           </h3>
@@ -26,7 +26,7 @@ const FAQ = () => {
                       index === FAQDATA.length - 1 && ""
                     }`}
                   >
-                    <Disclosure.Button className="flex items-center justify-between w-full px-2 text-base sm:text-lg font-medium text-left  ">
+                    <Disclosure.Button className=" border-b-2 rounded-2xl flex items-center justify-between w-full px-4 py-6 text-base sm:text-lg font-medium text-left  ">
                       <span className="flex-1 font-medium text-2xl ">
                         {data.title}
                       </span>
@@ -38,10 +38,11 @@ const FAQ = () => {
                         )}
                       </span>
                     </Disclosure.Button>
-                    <Disclosure.Panel className=" pl-6 sm:pl-10 pr-14 sm:pr-16 py-6 text-[12px] md:text-sm">
-                      {data.desc}
+                    <Disclosure.Panel className="border-2 border-t-0 px-4 rounded-b-2xl flex flex-col py-8 text-[18px] leading-[150.2%] ">
+                      {data.desc} <br />
+                      {data.desc1}
                     </Disclosure.Panel>
-                    <hr className="w-full my-1 border-b-1  border-black" />
+                    {/* <hr className="w-full my-1 border-b-1  border-black" /> */}
                   </div>
                 )}
               </Disclosure>

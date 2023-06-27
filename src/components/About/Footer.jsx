@@ -13,13 +13,12 @@ const Footer = () => {
     AOS.refresh();
   }, []);
   return (
-    <div className=" mt-24 flex flex-col gap-14 ">
-      <div className=" flex flex-col items-center max-w-[811px] justify-center w-full self-center text-center  ">
+    <div className=" mt-24 mb-20 flex flex-col gap-14 ">
+      <div className=" flex flex-col gap-10 items-center max-w-[811px] justify-center w-full self-center text-center  ">
         <h2 className=" text-4xl font-bold ">Our Team</h2>
         <p className=" text-[22px]  ">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula
-          velit eu nulla mattis, nec eleifend augue sagittis. Aenean auctor arcu
-          ut est bibendum,{" "}
+          The <strong> ChaseScroll </strong> team is a passionate group of
+          professionals committed to revolutionising event and group management.
         </p>
       </div>
       <div className=" flex flex-row flex-wrap gap-8 max-w-[1200px] justify-center ">
@@ -31,12 +30,15 @@ const Footer = () => {
               alt="Image"
               className="w-full h-auto"
             />
-            <p
+            <div
               data-aos="fade-up"
-              className="absolute w-[249px] h-[79px] rounded-lg flex flex-row items-center justify-center mx-auto bottom-6 right-0 left-0 bg-white p-2"
+              className="about-card  absolute w-[249px] h-[79px] rounded-2xl flex flex-col items-center justify-center mx-auto bottom-6 right-0 left-0 bg-white p-2"
             >
-              Overlay Text
-            </p>
+              <p className=" text-lg font-bold ">{item.text} </p>
+              <p className="text-base font-bold text-[#F60B0B] ">
+                {item.text1}{" "}
+              </p>
+            </div>
           </div>
         ))}
       </div>

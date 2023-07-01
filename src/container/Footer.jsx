@@ -154,14 +154,24 @@ const Footer = () => {
       <hr className="w-full mt-14 mb-8 border-b-1 border-white" />
       <div className="max-w-[1200px] w-full">
         <div className="flex gap-[35px] justify-center lg:justify-end">
-          <Icon className="text-[35px]" icon="mdi:twitter" color="white" />
-          <Icon
-            className="text-[35px]"
-            icon="ic:baseline-facebook"
-            color="white"
-          />
+          <a target="_blank" href="https://twitter.com/chasescroll">
+            <Icon className="text-[35px]" icon="mdi:twitter" color="white" />
+          </a>
+          <a target="_blank" href=" https://www.facebook.com/chase.scroll/ ">
+            <Icon
+              className="text-[35px]"
+              icon="ic:baseline-facebook"
+              color="white"
+            />
+          </a>
           <Icon className="text-[35px]" icon="mdi:linkedin" color="white" />
-          <Icon className="text-[35px]" icon="ri:instagram-fill" color="white" />
+          <a target="_blank" href="  https://www.instagram.com/chasescroll_/  ">
+            <Icon
+              className="text-[35px]"
+              icon="ri:instagram-fill"
+              color="white"
+            />
+          </a>
         </div>
       </div>
     </div>

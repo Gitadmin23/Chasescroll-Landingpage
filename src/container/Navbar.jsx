@@ -125,7 +125,7 @@ const Navbar = () => {
           <CustomLink path="/about" transparent={false} isScrolled={false}>
             About us
           </CustomLink>
-          <CustomLink path="#" transparent={false} isScrolled={false}>
+          <CustomLink path="/privacy-poilcy" transparent={false} isScrolled={false}>
             Policy
           </CustomLink>
           <CustomLink path="/contact" transparent={false} isScrolled={false}>

@@ -39,10 +39,10 @@ const Header = ({data}) => {
               <div className=" flex gap-[29px] ">
                 {/* <Button1 img={googlePlay} text1="GET IT ON" text2="Google Play" />
           <Button1 img={appleStore} text1="Download on the" text2="App Store" /> */}
-                <a href="#">
+                <a target="_blank" href="https://play.google.com/store/apps/details?id=com.chasescroll_android_app&hl=en&gl=US">
                   <img src={googlePlay} alt="googlePlay" />
                 </a>
-                <a href="#">
+                <a target="_blank" href="https://apps.apple.com/us/app/chasescroll/id1619999225">
                   <img src={appleStore} alt="appleStore" />
                 </a>
               </div>

@@ -78,7 +78,7 @@ const Navbar = () => {
           <CustomLink path="/" transparent={false} isScrolled={false}>
             Home
           </CustomLink>
-          <CustomLink path="#" transparent={false} isScrolled={false}>
+          {/* <CustomLink path="#" transparent={false} isScrolled={false}>
             <div
               className="relative lg:inline-block lg:mt-0"
               onMouseEnter={handleToggleEnter}
@@ -121,9 +121,12 @@ const Navbar = () => {
                 </div>
               )}
             </div>
-          </CustomLink>
+          </CustomLink> */}
           <CustomLink path="/about" transparent={false} isScrolled={false}>
             About us
+          </CustomLink>
+          <CustomLink path="/terms" transparent={false} isScrolled={false}>
+            Terms & Condition
           </CustomLink>
           <CustomLink path="/privacy-poilcy" transparent={false} isScrolled={false}>
             Policy

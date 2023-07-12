@@ -214,7 +214,10 @@ const Navbar = () => {
                   >
                     About us
                   </CustomLink>
-                  <CustomLink path="#" transparent={false} isScrolled={false}>
+                  <CustomLink path="/terms" transparent={false} isScrolled={false}>
+                    Terms & Condition
+                  </CustomLink>
+                  <CustomLink path="/contact" transparent={false} isScrolled={false}>
                     Policy
                   </CustomLink>
                   <CustomLink

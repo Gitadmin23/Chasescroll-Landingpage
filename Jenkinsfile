@@ -40,8 +40,8 @@ pipeline {
         steps{
             sh 'cd /home/bitnami/agent/prod/chasescroll-landing-page-job && ls -la && sudo npm install && sudo npm run build'
             sh 'rm -rf ~/stack/apache/htdocs/*'
-            sh 'cp -r /home/bitnami/agent/prod/dist/* ~/stack/apache/htdocs'
-            sh 'cd /home/bitnami/agent/prod && ls -la  && cd ~/stack/apache/htdocs'
+            sh 'cp -r /home/bitnami/agent/prod/chasescroll-landing-page-job/dist/* ~/stack/apache/htdocs'
+            sh 'cd /home/bitnami/agent/prod/chasescroll-landing-page-job && ls -la  && cd ~/stack/apache/htdocs'
             // sh 'export NODE_OPTIONS=--max_old_space_size=4096'
         }
     }

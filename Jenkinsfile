@@ -38,7 +38,7 @@ pipeline {
     }
      stage('Build the project and copy the contents to the ~/stack/apache/htdocs'){
         steps{
-            sh 'cd /home/bitnami/agent/prod/chasescroll-landing-page-job && ls -la && npm install && npm run build'
+            sh 'cd /home/bitnami/agent/prod/chasescroll-landing-page-job && ls -la && sudo npm install && sudo npm run build'
             sh 'rm -rf ~/stack/apache/htdocs/*'
             sh 'cp -r /home/bitnami/agent/prod/dist/* ~/stack/apache/htdocs'
             sh 'cd /home/bitnami/agent/prod && ls -la  && cd ~/stack/apache/htdocs'

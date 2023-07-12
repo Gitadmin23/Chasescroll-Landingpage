@@ -16,7 +16,8 @@ pipeline {
    stage('Clone'){
         steps{
             withCredentials([[$class: 'UsernamePasswordMultiBinding', credentialsId: 'github_creds', usernameVariable: 'GITHUB_CREDENTIALS_USR', passwordVariable: 'GITHUB_CREDENTIALS_PSW']]) {
-                sh "cd /home/bitnami/agent && git clone https://github.com/ChasescrollGit/website-landing-page "
+               sh "sudo mkdir /home/bitnami/agent/prod
+                sh "cd /home/bitnami/agent/prod && cp -r /home/bitnami/agent/workspace/chasescroll-landing-page-job ./"
                 
             }
         }
@@ -32,15 +33,15 @@ pipeline {
     }
     stage('Testing agent properties'){
         steps{
-            sh 'pwd && sudo ls /home/bitnami/agent'
+            sh 'pwd && sudo ls /home/bitnami/agent/prod'
     }
     }
      stage('Build the project and copy the contents to the ~/stack/apache/htdocs'){
         steps{
-            sh 'cd /home/bitnami/agent/website-landing-page && ls -la && npm install && npm run build'
+            sh 'cd /home/bitnami/agent/prod && ls -la && npm install && npm run build'
             sh 'rm -rf ~/stack/apache/htdocs/*'
-            sh 'cp -r /home/bitnami/agent/website-landing-page/dist/* ~/stack/apache/htdocs'
-            sh 'cd /home/bitnami/agent/website-landing-page && ls -la  && cd ~/stack/apache/htdocs'
+            sh 'cp -r /home/bitnami/agent/prod/dist/* ~/stack/apache/htdocs'
+            sh 'cd /home/bitnami/agent/prod && ls -la  && cd ~/stack/apache/htdocs'
             // sh 'export NODE_OPTIONS=--max_old_space_size=4096'
         }
     }

@@ -16,7 +16,7 @@ pipeline {
    stage('Clone'){
         steps{
             withCredentials([[$class: 'UsernamePasswordMultiBinding', credentialsId: 'github_creds', usernameVariable: 'GITHUB_CREDENTIALS_USR', passwordVariable: 'GITHUB_CREDENTIALS_PSW']]) {
-               sh "sudo mkdir /home/bitnami/agent/prod "
+              
                 sh "cd /home/bitnami/agent/prod && sudo cp -r /home/bitnami/agent/workspace/chasescroll-landing-page-job ./"
                 
             }

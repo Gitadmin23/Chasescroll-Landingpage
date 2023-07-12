@@ -76,20 +76,20 @@ export const ABOUT_MAIN = [
 export const ABOUT_FOOTER = [
     {
         id: 1,
-        img: "/assets/about-footer1.png",
-        text: "MIRACLE NEBOH",
-        text1: "CEO, Founder"
+        img: "/assets/about3.png",
+        text: "Miracle C Neboh",
+        text1: "(Chief Executive Officer)"
     },
     {
         id: 2,
-        img: "/assets/about-footer1.png",
-        text: "MIRACLE NEBOH",
-        text1: "CEO, Founder"    },
+        img: "/assets/about2.png",
+        text: "Femi Babaniyi",
+        text1: "(Chief Software Engineer)"    },
     {
         id: 3,
-        img: "/assets/about-footer1.png",
-        text: "MIRACLE NEBOH",
-        text1: "CEO, Founder"    },
+        img: "/assets/about.png",
+        text: "Abolaji Alabi",
+        text1: "(Chief technology officer)"    },
 
 ]
 export const CONTACT_CARDS = [

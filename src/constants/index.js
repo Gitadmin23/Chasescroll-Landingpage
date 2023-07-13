@@ -98,21 +98,21 @@ export const CONTACT_CARDS = [
         icon: "/assets/icons/mail.svg",
         title: "Email",
         text: "Our friendly team is here to help.",
-        link: "hi@untitledui.com",
+        link: "info@chasescroll.com",
     },
     {
         id: 2,
         icon: "/assets/icons/map.svg",
         title: "Office",
         text: "Come say hello at our office HQ.",
-        link: "100 Smith Street Collingwood VIC 3066 AU",
+        link: "9920 pacific heights blvd., suit 150, San Diego, California, 92121, United States of America",
     },
     {
         id: 3,
         icon: "/assets/icons/phone.svg",
         title: "Phone",
         text: "Mon-Fri from 8am to 5pm.",
-        link: "+1 (555) 000-0000",
+        link: "+18585995100",
     },
 ]
 export const FAQDATA = [

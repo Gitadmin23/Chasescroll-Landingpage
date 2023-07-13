@@ -69,7 +69,7 @@ const Footer = () => {
             <CustomLink path="/" transparent={false} isScrolled={false}>
               Home
             </CustomLink>
-            <div
+            {/* <div
               className="relative lg:inline-block lg:mt-0"
               onMouseEnter={handleToggleEnter}
             >
@@ -112,12 +112,15 @@ const Footer = () => {
                   </Link>
                 </div>
               )}
-            </div>
+            </div> */}
             <CustomLink path="/about" transparent={false} isScrolled={false}>
               About us
             </CustomLink>
-            <CustomLink path="#" transparent={false} isScrolled={false}>
+            <CustomLink path="/privacy-poilcy" transparent={false} isScrolled={false}>
               Policy
+            </CustomLink>
+            <CustomLink path="/terms" transparent={false} isScrolled={false}>
+              Terms & Condition
             </CustomLink>
             <CustomLink path="/contact" transparent={false} isScrolled={false}>
               Contact us
@@ -129,7 +132,7 @@ const Footer = () => {
             Subscribe to Chasescroll Newsletter
           </h3>
           <p className="text-base font-medium">
-            Subscribe to stay lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+          Don't miss out on the opportunity to be part of a thriving network of event enthusiasts.
           </p>
           <form
             className="flex flex-row gap-2 justify-center lg:justify-start"
@@ -143,7 +146,7 @@ const Footer = () => {
               id="email"
             />
             <button
-              className="w-[115px] rounded-lg flex justify-center items-center bg-chase-blue"
+              className="w-[115px] bg-[#5D70F9] rounded-lg flex justify-center items-center bg-chase-blue"
               type="submit"
             >
               Subscribe

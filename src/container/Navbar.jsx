@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Icon } from "@iconify/react";
-import { NavLink, Link, useLocation } from "react-router-dom";
+import { NavLink, Link, useLocation, useNavigate } from "react-router-dom";
 
 import logo from "../assets/logo.png";
 import ButtonGroup from "../components/Navbar/ButtonGroup";
@@ -9,6 +9,7 @@ const Navbar = () => {
   const [isMenuVisible, setIsMenuVisible] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
+  const navigate = useNavigate()
 
   const handleMenuToggle = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -69,7 +70,7 @@ const Navbar = () => {
   return (
     <div className="fixed z-50 top-0 w-full mx-auto max-w-[1440px] bg-white border-b-2">
       <div className="px-4 xl:px-0 max-w-[1200px] w-full mx-auto py-5 flex gap-8 justify-between items-center">
-        <div className="flex flex-row gap-1 max-w-[197px] w-full items-center">
+        <div role="button" onClick={()=> navigate("/")} className="flex flex-row gap-1 max-w-[197px] w-full items-center">
           <img className="max-w-[60px] w-full" src={logo} alt="logo" />
           <p className="text-2xl font-normal w-full">Chasescroll</p>
         </div>

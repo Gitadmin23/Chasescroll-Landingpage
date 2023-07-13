@@ -65,7 +65,7 @@ const Footer = () => {
             <p className="text-5xl font-bold w-full">Chasescroll</p>
           </div>
 
-          <div className="flex justify-between w-full">
+          <div className="flex justify-between lg:flex-row flex-col gap-4 lg:px-0 px-6 w-full">
             <CustomLink path="/" transparent={false} isScrolled={false}>
               Home
             </CustomLink>
@@ -127,7 +127,7 @@ const Footer = () => {
             </CustomLink>
           </div>
         </div>
-        <div className="text-center lg:text-left max-w-[557px] w-full flex flex-col gap-[18px]">
+        {/* <div className="text-center lg:text-left max-w-[557px] w-full flex flex-col gap-[18px]">
           <h3 className="text-[32px] font-medium">
             Subscribe to Chasescroll Newsletter
           </h3>
@@ -152,11 +152,12 @@ const Footer = () => {
               Subscribe
             </button>
           </form>
-        </div>
+        </div> */}
       </div>
       <hr className="w-full mt-14 mb-8 border-b-1 border-white" />
-      <div className="max-w-[1200px] w-full">
-        <div className="flex gap-[35px] justify-center lg:justify-end">
+      <div className="max-w-[1200px] w-full flex lg:flex-row flex-col-reverse items-center  ">
+        <p className=" lg:absolute inset-auto text-white lg:mt-0 mt-8 " >©2023 Chasescroll, All Rights Reserved</p>
+        <div className="flex gap-[35px] w-full justify-center lg:justify-end">
           <a target="_blank" href="https://twitter.com/chasescroll">
             <Icon className="text-[35px]" icon="mdi:twitter" color="white" />
           </a>

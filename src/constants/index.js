@@ -51,7 +51,7 @@ export const MAIN = [
 
 export const ABOUT_HEADER = [
     {
-        title: "About Chasescroll ",
+        title: "About Chasescroll", 
         text: "Chasescroll is a cutting-edge event management platform designed to streamline the process of organizing and participating in events.",
         position: 1,
         img: "/assets/about-header.png",
@@ -82,14 +82,19 @@ export const ABOUT_FOOTER = [
     },
     {
         id: 2,
-        img: "/assets/about2.png",
+        img: "/assets/about2.jpeg",
         text: "Femi Babaniyi",
         text1: "(Chief Software Engineer)"    },
     {
         id: 3,
-        img: "/assets/about.png",
+        img: "/assets/about.jpeg",
         text: "Abolaji Alabi",
-        text1: "(Chief technology officer)"    },
+        text1: "(Chief Technology Officer)"    },
+    {
+        id: 4,
+        img: "/assets/about4.jpeg",
+        text: "Abayomi Salami ",
+        text1: "(Chief Financial Officer)"    },
 
 ]
 export const CONTACT_CARDS = [
@@ -117,8 +122,8 @@ export const CONTACT_CARDS = [
 ]
 export const FAQDATA = [
     {
-        title: 'Who can use Chasescroll??',
-        desc: "Chasescroll web and mobile app can be used by creators, event planners, event attendees,community leaders, groups, and users looking to connect with friends and new networks. Download the app on Apple Store or Play Store and then sign up to start using the mobile app. Or access the web application using the URL Chasescroll.com",
+        title: 'Who can use Chasescroll?',
+        desc: "Chasescroll web and mobile app can be used by creators, event planners, event attendees, community leaders, groups, and users looking to connect with friends and new networks. Download the app on Apple Store or Play Store and then sign up to start using the mobile app. Or access the web application using the URL Chasescroll.com",
     },
     {
         title: 'Who can create an Event?',

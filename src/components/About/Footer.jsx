@@ -21,14 +21,14 @@ const Footer = () => {
           professionals committed to revolutionising event and group management.
         </p>
       </div>
-      <div className=" flex flex-row flex-wrap gap-8 max-w-[1200px] justify-center ">
+      <div className=" grid grid-cols-1 lg:grid-cols-4 gap-8 max-w-[1200px] justify-center ">
         {ABOUT_FOOTER.map((item, index) => (
-          <div className="rounded-xl max-w-[348px] w-full relative">
+          <div className="rounded-xl w-full relative">
             <img
               data-aos="fade-up"
               src={item.img}
               alt="Image"
-              className="w-full h-auto"
+              className="w-full h-[350px] object-cover rounded-xl "
             />
             <div
               data-aos="fade-up"

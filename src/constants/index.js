@@ -157,8 +157,8 @@ export const FAQDATA = [
     },
     {
         title: ' Are my payment information secured on Chasecroll? ',
-        desc: " Event organizers will not be able to cancel a paid event if payment has been made by attendees but refund has not been processed.  ",
-        desc1: " Event attendee can cancel a ticket or seek refund within 3 days the ticket was purchased or less than 72 hours to the event depending on which one comes first. ",
+        desc: " Payment information is secured through 3rd party payment gateway providers (Paystack and Stripe). These payment processors have established security measures that comply with the Payment Card Industry Data Security Standard. Chasescroll does not store users' payment details.",
+        // desc1: " Event attendee can cancel a ticket or seek refund within 3 days the ticket was purchased or less than 72 hours to the event depending on which one comes first. ",
     },
 ];
 

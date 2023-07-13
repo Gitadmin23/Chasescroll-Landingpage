@@ -110,14 +110,14 @@ export const CONTACT_CARDS = [
         icon: "/assets/icons/map.svg",
         title: "Office",
         text: "Come say hello at our office HQ.",
-        link: "9920 pacific heights blvd., suit 150, San Diego, California, 92121, United States of America",
+        link: "70 Adetokunbo Ademola street opposite eko hotel Victoria island lagos",
     },
     {
         id: 3,
         icon: "/assets/icons/phone.svg",
         title: "Phone",
         text: "Mon-Fri from 8am to 5pm.",
-        link: "+18585995100",
+        link: "+2349116934251",
     },
 ]
 export const FAQDATA = [

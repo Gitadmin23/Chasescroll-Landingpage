@@ -18,7 +18,7 @@ const Template1 = ({ containerClassName }) => {
   return (
     <div className={` rounded-[32px] py-8 lg:pb-0 justify-center flex items-center w-full ${containerClassName}`}>
       <div className="w-full lg:max-w-[566px] flex flex-col gap-5 text-center lg:text-left items-center lg:items-start">
-        <h1 className="text-[36px] font-bold leading-[126.7%]">
+        <h1 className=" text-3xl lg:text-[36px] font-bold leading-[126.7%]">
           <span className="text-chaseBlue">Chasescroll </span>
           Available for mobile and Desktop
         </h1>

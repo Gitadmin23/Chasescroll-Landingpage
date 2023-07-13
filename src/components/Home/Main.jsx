@@ -43,7 +43,7 @@ const Main = () => {
               />
             </div>
             <div className=" max-w-[700px] text-center items-center lg:items-start lg:text-left flex flex-col gap-4 lg:gap-8 w-full">
-              <h3 className="text-4xl font-bold">
+              <h3 className="text-3xl lg:text-4xl font-bold ">
                 {words.map((word, wordIndex) => (
                   <span key={wordIndex}>
                     {wordIndex === words.length - 1 ? (
@@ -54,17 +54,19 @@ const Main = () => {
                   </span>
                 ))}
               </h3>
-              <p className={`  w-full ${item.textWidth} `}  >{item.text}</p>
+              <p className={` text-center lg:text-left w-full ${item.textWidth} `}  >{item.text}</p>
               <div className=" flex flex-col gap-y-4 w-fit lg:gap-y-6 ">
                 {item.bullets.map((points, index) => (
                   <div key={index} className="flex items-center  gap-3">
-                    <Icon
-                      icon="icon-park-solid:check-one"
-                      color="#12BC42"
-                      width="24"
-                      height="24"
-                    />
-                    <p className=" text-xl " >{points}</p>
+                    <div className=" w-fit " >
+                      <Icon
+                        icon="icon-park-solid:check-one"
+                        color="#12BC42"
+                        width="24"
+                        height="24"
+                      />
+                    </div>
+                    <p className=" text-xl text-left " >{points}</p>
                   </div>
                 ))}
               </div>

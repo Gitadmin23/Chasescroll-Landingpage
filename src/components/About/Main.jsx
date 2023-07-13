@@ -47,7 +47,7 @@ const Main = () => {
             key={item.id}
           >
             <h5 className=" font-bold text-2xl">{item.tag}</h5>
-            <h3 className="text-4xl text-chaseBlue font-bold">{item.title}</h3>
+            <h3 className=" text-3xl lg:text-4xl text-chaseBlue font-bold">{item.title}</h3>
             <p className="text-[22px]">
               {index === 0 ? (
                 <>

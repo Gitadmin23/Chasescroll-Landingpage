@@ -1,7 +1,7 @@
 export const HOME_HEADER = [
     {
         title: "Redefining  Experiences for Effortless Event Management",
-        text: "We create an efficient ecosystem for event management Solving problems surrounding events and community group management.",
+        text: "Discover a new era of event management as we redefine the way you plan, organise, and execute your events. Join us for an unforgettable journey as we revolutionise the world of events.",
         position: 2,
         img: "/assets/phone_1.png",
     }
@@ -11,7 +11,7 @@ export const MAIN = [
         id: 1,
         img: "/assets/main-img1.png",
         title: "Explore Event and Purchase Ticket on Chasescroll",
-        text: "Explore a diverse range of events tailored to your interests and secure your spot with ease. ",
+        text: "Explore a diverse range of events tailored to your interest and secure your spot with ease. ",
         textWidth: "max-w-[499px] ",
         bullets: [
             "Effortless event management made simple.",
@@ -69,7 +69,7 @@ export const ABOUT_MAIN = [
         id: "2",
         tag: "Vision ",
         title: "Seamless Event Experiences",
-        text: "We strive to provide a seamless and hassle-free experience for event-goers. By offering a user-friendly platform for purchasing tickets, we aim to eliminate the complexities associated with traditional ticketing processes.",
+        // text: "We strive to provide a seamless and hassle-free experience for event-goers. By offering a user-friendly platform for purchasing tickets, we aim to eliminate the complexities associated with traditional ticketing processes.",
         img: "/assets/rectangle.png"
     },
 ]

@@ -18,6 +18,7 @@ const Header = ({data}) => {
     <>
       {data.map((item, index) => {
         const words = item.title.split(" ");
+        const subtext = item.text.split(" ");
 
         return (
           <div className=" w-full relative " > 
@@ -34,8 +35,19 @@ const Header = ({data}) => {
                     </span>
                   ))}
                 </h1>
-                <p className=" max-w-[478px] w-full text-lg leading-[145.7%] ">
-                  {item.text}
+                <p className=" max-w-[478px] w-full text-lg text-[#4B4E61] leading-[145.7%] ">
+                {subtext.map((word, wordIndex) => (
+                    <span key={wordIndex}>
+                      {(word === "plan," || word === "organise," || word === "execute") ? (
+                        <span className="text-chaseBlue font-bold ">{word}</span>
+                      ) :(word === "Chasescroll") ? (
+                        <span className=" font-bold ">{word}</span>
+                      ) : (
+                        <>{word} </>
+                      )}{" "}
+                    </span>
+                  ))}
+                  {/* {item.text} */}
                 </p>
                 <div className=" flex gap-[29px] ">
                   {/* <Button1 img={googlePlay} text1="GET IT ON" text2="Google Play" />

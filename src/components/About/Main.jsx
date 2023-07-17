@@ -48,7 +48,7 @@ const Main = () => {
           >
             <h5 className=" font-bold text-2xl">{item.tag}</h5>
             <h3 className=" text-3xl lg:text-4xl text-chaseBlue font-bold">{item.title}</h3>
-            <p className="text-[22px]">
+            <p className="text-[22px] text-[#4B4E61] ">
               {index === 0 ? (
                 <>
                   {item.text.split(" ").map((word, wordIndex) => (

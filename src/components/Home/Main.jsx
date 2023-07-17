@@ -24,6 +24,7 @@ const Main = () => {
       {MAIN.map((item, index) => {
         // const lastWord = getLastWord(item.title);
         const words = item.title.split(" ");
+        const subtext = item.text.split(" ");
 
         return (
           <div
@@ -54,7 +55,19 @@ const Main = () => {
                   </span>
                 ))}
               </h3>
-              <p className={` text-center lg:text-left w-full ${item.textWidth} `}  >{item.text}</p>
+              <p className={` text-center text-[#4B4E61] lg:text-left w-full ${item.textWidth} `}  >
+                {subtext.map((word, wordIndex) => (
+                  <span key={wordIndex}>
+                    { (word === "Create,") ? (
+                      <><br/><br/>{word} </>
+                    ) :(word === "events" || word === "secure") ? (
+                      <span className="font-bold">{word} </span>
+                    ): (
+                      <>{word} </>
+                    )}
+                  </span>
+                ))}  
+              </p>
               <div className=" flex flex-col gap-y-4 w-fit lg:gap-y-6 ">
                 {item.bullets.map((points, index) => (
                   <div key={index} className="flex items-center  gap-3">

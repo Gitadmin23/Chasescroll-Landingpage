@@ -21,11 +21,10 @@ const Footer = () => {
       <div className=" flex flex-col gap-8 text-center items-center ">
         <div className="max-w-[745px] w-full flex flex-col gap-6 items-center ">
           <h3 className=" text-4xl font-bold ">
-            Explore <span className=" text-chaseBlue ">Chasescroll</span>
+            Discover <span className=" text-chaseBlue ">Chasescroll</span>
           </h3>
           <p className=" text-3xl ">
-            Meet the teams behind our products and explore our vision for the
-            future.
+            Embark on an exciting journey of event exploration.
           </p>
           <div className=" flex gap-1 items-center text-chaseBlue ">
             <p className=" text-xl font-medium "> Watch Video</p>

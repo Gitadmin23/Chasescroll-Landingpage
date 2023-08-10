@@ -4,8 +4,26 @@ import { Icon } from "@iconify/react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Template1 from "../Template1";
+import YouTube from 'react-youtube';
 
 const Footer = () => {
+
+  const opts = {
+    height: '690',
+    width: '940',
+    playerVars: {
+      // https://developers.google.com/youtube/player_parameters
+      autoplay: 0,
+    },
+  };
+  const optsmobile = {
+    height: '290',
+    width: '440',
+    playerVars: {
+      // https://developers.google.com/youtube/player_parameters
+      autoplay: 0,
+    },
+  };
   useEffect(() => {
     AOS.init({
       duration: 1500, // Animation duration in milliseconds
@@ -32,16 +50,22 @@ const Footer = () => {
           </div>
         </div>
         <div>
-          <video
+          <div className=" lg:block hidden " >
+            <YouTube className=" rounded-xl" videoId="TKODgfkpL6o" opts={opts} />
+          </div>
+          <div className=" lg:hidden " >
+            <YouTube className=" rounded-xl" videoId="TKODgfkpL6o" opts={optsmobile} />
+          </div>
+          {/* <video
             data-aos="fade-up"
             className="w-full  h-full  object-cover"
-            src={img1}
+            src={"https://youtu.be/TKODgfkpL6o"}
             autoPlay
             loop
             muted
             playsInline // added attribute
-            poster={img1} // added fallback image
-          />
+            // poster={img1} // added fallback image
+          /> */}
         </div>
       </div>
     </div>

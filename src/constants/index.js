@@ -110,6 +110,9 @@ export const CONTACT_CARDS = [
         icon: "/assets/icons/map.svg",
         title: "Office",
         text: "Come say hello at our office HQ.",
+        firstlabel : "America Address: ",
+        first: " 9920 pacific heights blvd., suit 150, San Diego, California, 92121, United States of America",
+        secondlabel : "Nigeria Address:",
         link: "70 Adetokunbo Ademola street opposite eko hotel Victoria island lagos",
     },
     {
@@ -117,6 +120,9 @@ export const CONTACT_CARDS = [
         icon: "/assets/icons/phone.svg",
         title: "Phone",
         text: "Mon-Fri from 8am to 5pm.",
+        firstlabel : "America Phone: ",
+        first: "+1 619-720-2791",
+        secondlabel : "Nigeria Phone:",
         link: "+2349116934251",
     },
 ]

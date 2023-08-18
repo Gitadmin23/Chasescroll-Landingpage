@@ -137,8 +137,8 @@ const Navbar = () => {
           </CustomLink>
         </div>
         <div className="hidden lg:flex gap-4">
-          <ButtonGroup white ctaText="Login" url={"http://chasescroll.com/"} />
-          <ButtonGroup blue ctaText="Get Started" url={"http://chasescroll.com/sign-up"} />
+          <ButtonGroup white ctaText="Login" url={"https://app.chasescroll.com/"} />
+          <ButtonGroup blue ctaText="Get Started" url={"https://app.chasescroll.com/sign-up"} />
         </div>
         {/* Hamburger Menu */}
         <div className="flex lg:hidden">
@@ -230,8 +230,8 @@ const Navbar = () => {
                   </CustomLink>
                 </ul>
                 <div className="mt-auto flex gap-4">
-                  <ButtonGroup white ctaText="Login" url={"http://chasescroll.com/"} />
-                  <ButtonGroup blue ctaText="Get Started" url={"http://chasescroll.com/sign-up"} />
+                  <ButtonGroup white ctaText="Login" url={"https://app.chasescroll.com/"} />
+                  <ButtonGroup blue ctaText="Get Started" url={"https://app.chasescroll.com/sign-up"} />
                 </div>
               </div>
             </div>

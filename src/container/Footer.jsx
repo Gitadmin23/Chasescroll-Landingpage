@@ -168,7 +168,9 @@ const Footer = () => {
               color="white"
             />
           </a>
-          <Icon className="text-[35px]" icon="mdi:linkedin" color="white" />
+          <a target="_blank" href=" https://www.linkedin.com/company/chasescroll/">
+            <Icon className="text-[35px]" icon="mdi:linkedin" color="white" />
+          </a>
           <a target="_blank" href="  https://www.instagram.com/chasescroll_/  ">
             <Icon
               className="text-[35px]"

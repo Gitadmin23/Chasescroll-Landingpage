@@ -3,8 +3,9 @@ import googlePlay from "../../assets/icons/google-play.svg";
 import appleStore from "../../assets/icons/app-store.svg";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { toast } from "react-toastify"
 
-const Header = ({data}) => {
+const Header = ({ data }) => {
   useEffect(() => {
     AOS.init({
       duration: 1500, // Animation duration in milliseconds
@@ -14,6 +15,10 @@ const Header = ({data}) => {
     AOS.refresh();
   }, []);
 
+  const handleToast = () => {
+    toast.info('Coming soon');
+  }
+
   return (
     <>
       {data.map((item, index) => {
@@ -21,7 +26,7 @@ const Header = ({data}) => {
         const subtext = item.text.split(" ");
 
         return (
-          <div className=" w-full relative " > 
+          <div className=" w-full relative " >
             <div className=" flex flex-col lg:flex-row justify-between gap-y-4 items-center lg:items-center lg:py-4 w-full">
               <div className="w-full max-w-[648px] flex flex-col gap-9 text-center lg:text-left items-center lg:items-start ">
                 <h1 className=" text-3xl lg:text-[54px] font-bold leading-[126.7%] ">
@@ -36,11 +41,11 @@ const Header = ({data}) => {
                   ))}
                 </h1>
                 <p className=" max-w-[478px] w-full text-lg text-[#4B4E61] leading-[145.7%] ">
-                {subtext.map((word, wordIndex) => (
+                  {subtext.map((word, wordIndex) => (
                     <span key={wordIndex}>
                       {(word === "plan," || word === "organise," || word === "execute") ? (
                         <span className="text-chaseBlue font-bold ">{word}</span>
-                      ) :(word === "Chasescroll") ? (
+                      ) : (word === "Chasescroll") ? (
                         <span className=" font-bold ">{word}</span>
                       ) : (
                         <>{word} </>
@@ -50,12 +55,20 @@ const Header = ({data}) => {
                   {/* {item.text} */}
                 </p>
                 <div className=" flex gap-[29px] ">
-                  {/* <Button1 img={googlePlay} text1="GET IT ON" text2="Google Play" />
-            <Button1 img={appleStore} text1="Download on the" text2="App Store" /> */}
-                  <a target="_blank" href="https://play.google.com/store/apps/details?id=com.chasescroll_android_app&hl=en&gl=US">
+                  <a 
+                  // target="_blank"
+                  className=" cursor-pointer "
+                    onClick={handleToast}
+                  // href="https://play.google.com/store/apps/details?id=com.chasescroll_android_app&hl=en&gl=US"
+                  >
                     <img src={googlePlay} alt="googlePlay" />
                   </a>
-                  <a target="_blank" href="https://apps.apple.com/us/app/chasescroll/id1619999225">
+                  <a 
+                  // target="_blank"
+                  className=" cursor-pointer "
+                    onClick={handleToast}
+                    // href="https://apps.apple.com/us/app/chasescroll/id1619999225"
+                  >
                     <img src={appleStore} alt="appleStore" />
                   </a>
                 </div>
@@ -63,7 +76,7 @@ const Header = ({data}) => {
               <div data-aos="fade-up" className="w-full right-0 max-w-[500px] top-8 flex ">
                 <img src={item.img} alt="" className=" w-full " />
               </div>
-            </div>  
+            </div>
           </div>
         );
       })}

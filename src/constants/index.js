@@ -78,23 +78,23 @@ export const ABOUT_FOOTER = [
         id: 1,
         img: "/assets/about3.png",
         text: "Miracle C Neboh",
-        text1: "(Chief Executive Officer)"
+        text1: "(CEO/Founder)"
     },
     {
         id: 2,
         img: "/assets/about2.jpeg",
         text: "Femi Babaniyi",
-        text1: "(Chief Software Engineer)"    },
+        text1: "(CTO/Co-Founder)"    },
     {
         id: 3,
         img: "/assets/about.jpeg",
         text: "Abolaji Alabi",
-        text1: "(Chief Technology Officer)"    },
+        text1: "(Business Analyst)"    },
     {
         id: 4,
         img: "/assets/about4.jpeg",
         text: "Abayomi Salami ",
-        text1: "(Chief Financial Officer)"    },
+        text1: "(Financial officer)"    },
 
 ]
 export const CONTACT_CARDS = [

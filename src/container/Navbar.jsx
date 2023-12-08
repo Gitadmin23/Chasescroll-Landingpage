@@ -128,35 +128,58 @@ const Navbar = () => {
 
               <DrawerBody >
                 <ul className="mt-20 flex flex-col items-center justify-start w-full gap-8 text-lg">
-                  <CustomLink path="/" transparent={false} isScrolled={false}>
-                    Home
-                  </CustomLink>
-                  <CustomLink
-                    path="/about"
-                    transparent={false}
-                    isScrolled={false}
-                  >
-                    About us
-                  </CustomLink>
-                  <CustomLink path="/privacy-poilcy" transparent={false} isScrolled={false}>
+
+                  <div role="button"
+                    onClick={onClose}>
+
+                    <CustomLink path="/" transparent={false} isScrolled={false}>
+                      Home
+                    </CustomLink>
+                  </div>
+                  <div role="button"
+                    onClick={onClose}>
+
+                    <CustomLink
+                      path="/about"
+                      transparent={false}
+                      isScrolled={false}
+                    >
+                      About us
+                    </CustomLink>
+                  </div>
+                  <div role="button"
+                    onClick={onClose}> 
+                  <CustomLink path="/privacy-poilcy"
+                    onClick={onClose} transparent={false} isScrolled={false}>
                     Policy
                   </CustomLink>
-                  <CustomLink path="/terms" transparent={false} isScrolled={false}>
+                  </div>
+                  <div role="button"
+                    onClick={onClose}>
+                  <CustomLink path="/terms"
+                    onClick={onClose} transparent={false} isScrolled={false}>
                     Terms & Condition
                   </CustomLink>
+                  </div>
+                  <div role="button"
+                    onClick={onClose}>
                   <CustomLink
                     path="/contact"
+                    onClick={onClose}
                     transparent={false}
                     isScrolled={false}
                   >
                     Contact us
                   </CustomLink>
+                  </div>
                 </ul>
               </DrawerBody>
 
               <DrawerFooter gap={"5"} >
-                <ButtonGroup white ctaText="Login" url={"https://app.chasescroll.com/auth"} />
-                <ButtonGroup blue ctaText="Get Started" url={"https://app.chasescroll.com/auth/signup"} />
+                <ButtonGroup white
+                  onClick={onClose} ctaText="Login" url={"https://app.chasescroll.com/auth"} />
+                <ButtonGroup blue
+                  onClick={onClose} ctaText="Get Started" url={"https://app.chasescroll.com/auth/signup"} />
               </DrawerFooter>
             </DrawerContent>
           </Drawer>

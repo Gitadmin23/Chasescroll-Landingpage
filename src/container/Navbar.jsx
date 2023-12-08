@@ -82,50 +82,6 @@ const Navbar = () => {
           <CustomLink path="/" transparent={false} isScrolled={false}>
             Home
           </CustomLink>
-          {/* <CustomLink path="#" transparent={false} isScrolled={false}>
-            <div
-              className="relative lg:inline-block lg:mt-0"
-              onMouseEnter={handleToggleEnter}
-            >
-              <button
-                className="text-black flex items-center gap-1 hover:text-chaseBlue lg:mr-4"
-                onClick={handleMenuToggle}
-              >
-                Features <Icon icon="mdi:chevron-down" />
-              </button>
-              {isMenuOpen && (
-                <div
-                  className="w-full absolute left-0 mt-2 bg-white shadow-lg rounded-lg py-2 lg:block"
-                  onMouseLeave={handleDropdownLeave}
-                >
-                  <Link
-                    to="#"
-                    className="block px-0 py-2 text-gray-800 hover:bg-chaseBlue hover:text-white"
-                  >
-                    Feature 1
-                  </Link>
-                  <Link
-                    to="#"
-                    className="block px-0 py-2 text-gray-800 hover:bg-chaseBlue hover:text-white"
-                  >
-                    Feature 2
-                  </Link>
-                  <Link
-                    to="#"
-                    className="block px-0 py-2 text-gray-800 hover:bg-chaseBlue hover:text-white"
-                  >
-                    Feature 3
-                  </Link>
-                  <Link
-                    to="#"
-                    className="block px-0 py-2 text-gray-800 hover:bg-chaseBlue hover:text-white"
-                  >
-                    Feature 4
-                  </Link>
-                </div>
-              )}
-            </div>
-          </CustomLink> */}
           <CustomLink path="/about" transparent={false} isScrolled={false}>
             About us
           </CustomLink>
@@ -164,11 +120,11 @@ const Navbar = () => {
             isOpen={isOpen}
             placement='right'
             size={"sm"}
-            onClose={onClose} 
+            onClose={onClose}
           >
             <DrawerOverlay />
             <DrawerContent bg={"white"} >
-              <DrawerCloseButton /> 
+              <DrawerCloseButton />
 
               <DrawerBody >
                 <ul className="mt-20 flex flex-col items-center justify-start w-full gap-8 text-lg">
@@ -203,7 +159,7 @@ const Navbar = () => {
                 <ButtonGroup blue ctaText="Get Started" url={"https://app.chasescroll.com/auth/signup"} />
               </DrawerFooter>
             </DrawerContent>
-          </Drawer> 
+          </Drawer>
         </div>
       </div>
     </div>

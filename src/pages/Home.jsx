@@ -10,7 +10,7 @@ const Home = () => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div className=" mt-[180px] lg:mt-[132px] max-w-[1200px] w-full mx-auto flex flex-col gap-8">
+    <div className=" mt-[180px] lg:mt-[132px] max-w-[1200px] overflow-x-hidden w-full mx-auto flex flex-col gap-8">
       <Header data={HOME_HEADER} />
       <Main />
       <Footer />

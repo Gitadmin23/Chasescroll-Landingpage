@@ -4,12 +4,15 @@ import { NavLink, Link, useLocation, useNavigate } from "react-router-dom";
 
 import logo from "../assets/logo.png";
 import ButtonGroup from "../components/Navbar/ButtonGroup";
+import { Drawer, DrawerBody, DrawerCloseButton, DrawerContent, DrawerFooter, DrawerHeader, DrawerOverlay, useDisclosure } from "@chakra-ui/react";
 
 const Navbar = () => {
   const [isMenuVisible, setIsMenuVisible] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
   const navigate = useNavigate()
+
+  const { isOpen, onOpen, onClose } = useDisclosure()
 
   const handleMenuToggle = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -68,9 +71,9 @@ const Navbar = () => {
   };
 
   return (
-    <div className="fixed z-50 top-0 w-full mx-auto max-w-[1440px] bg-white border-b-2">
+    <div className=" sticky z-50 top-0 w-full mx-auto max-w-[1440px] bg-white border-b-2">
       <div className="px-4 xl:px-0 max-w-[1200px] w-full mx-auto py-5 flex gap-8 justify-between items-center">
-        <div role="button" onClick={()=> navigate("/")} className="flex flex-row gap-1 max-w-[197px] w-full items-center">
+        <div role="button" onClick={() => navigate("/")} className="flex flex-row gap-1 max-w-[197px] w-full items-center">
           <img className="max-w-[60px] w-full" src={logo} alt="logo" />
           <p className="text-2xl font-normal w-full">Chasescroll</p>
         </div>
@@ -144,7 +147,7 @@ const Navbar = () => {
         <div className="flex lg:hidden">
           <div className="lg:hidden flex items-center">
             <button
-              onClick={handleMenuClick}
+              onClick={onOpen}
               className="p-3 z-50 focus:outline-none"
             >
               {isMenuVisible ? (
@@ -157,57 +160,21 @@ const Navbar = () => {
               )}
             </button>
           </div>
-          {isMenuVisible && (
-            <div className="fixed z-10 top-0 right-0 w-[80%] h-full bg-white lg:hidden   ">
-              <div className="flex flex-col items-start justify-start w-full h-full p-10">
+          <Drawer
+            isOpen={isOpen}
+            placement='right'
+            size={"sm"}
+            onClose={onClose} 
+          >
+            <DrawerOverlay />
+            <DrawerContent bg={"white"} >
+              <DrawerCloseButton /> 
+
+              <DrawerBody >
                 <ul className="mt-20 flex flex-col items-center justify-start w-full gap-8 text-lg">
                   <CustomLink path="/" transparent={false} isScrolled={false}>
                     Home
                   </CustomLink>
-                  {/* <CustomLink path="#" transparent={false} isScrolled={false}>
-                    <div
-                      className="relative lg:inline-block lg:mt-0"
-                      onMouseEnter={handleToggleEnter}
-                    >
-                      <button
-                        className="text-black flex items-center gap-1 hover:text-chaseBlue lg:mr-4"
-                        onClick={handleMenuToggle}
-                      >
-                        Features <Icon icon="mdi:chevron-down" />
-                      </button>
-                      {isMenuOpen && (
-                        <div
-                          className="w-full absolute left-0 mt-2 bg-white shadow-lg rounded-lg py-2 lg:block"
-                          onMouseLeave={handleDropdownLeave}
-                        >
-                          <Link
-                            to="#"
-                            className="block px-0 py-2 text-gray-800 hover:bg-chaseBlue hover:text-white"
-                          >
-                            Feature 1
-                          </Link>
-                          <Link
-                            to="#"
-                            className="block px-0 py-2 text-gray-800 hover:bg-chaseBlue hover:text-white"
-                          >
-                            Feature 2
-                          </Link>
-                          <Link
-                            to="#"
-                            className="block px-0 py-2 text-gray-800 hover:bg-chaseBlue hover:text-white"
-                          >
-                            Feature 3
-                          </Link>
-                          <Link
-                            to="#"
-                            className="block px-0 py-2 text-gray-800 hover:bg-chaseBlue hover:text-white"
-                          >
-                            Feature 4
-                          </Link>
-                        </div>
-                      )}
-                    </div>
-                  </CustomLink> */}
                   <CustomLink
                     path="/about"
                     transparent={false}
@@ -229,13 +196,14 @@ const Navbar = () => {
                     Contact us
                   </CustomLink>
                 </ul>
-                <div className="mt-auto flex gap-4">
-                  <ButtonGroup white ctaText="Login" url={"https://app.chasescroll.com/auth"} />
-                  <ButtonGroup blue ctaText="Get Started" url={"https://app.chasescroll.com/auth/signup"} />
-                </div>
-              </div>
-            </div>
-          )}
+              </DrawerBody>
+
+              <DrawerFooter gap={"5"} >
+                <ButtonGroup white ctaText="Login" url={"https://app.chasescroll.com/auth"} />
+                <ButtonGroup blue ctaText="Get Started" url={"https://app.chasescroll.com/auth/signup"} />
+              </DrawerFooter>
+            </DrawerContent>
+          </Drawer> 
         </div>
       </div>
     </div>
